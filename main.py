@@ -14,4 +14,7 @@ def main():
     print("Bienvenido al sistema de gestion de productos")
     mostrar_menu()
 
-main()
+
+# Verificación de que el script se ejecuta directamente
+if __name__ == "__main__":
+    main()

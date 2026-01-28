@@ -13,7 +13,11 @@ def mostrar_menu():
         opcion = input("Seleccione una opción: ")
 
 
-        if opcion == "1":
+        if opcion not in ["1","2","3","4","5"]:
+            print("Opción inválida, intente nuevamente")
+            continue
+
+        elif opcion == "1":
             print("Opción agregar producto ")
         elif opcion == "2":
             print("Opción listar productos ")
@@ -24,5 +28,3 @@ def mostrar_menu():
         elif opcion == "5":
             print("Saliendo del sistema ...")
             break
-        else:
-            print("Opción inválida, intente nuevamente")
