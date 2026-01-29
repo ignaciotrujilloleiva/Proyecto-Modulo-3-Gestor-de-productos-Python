@@ -1,6 +1,7 @@
 # Lección 4: Control de flujo y estructuras
 # Lección 5: Estructuras de datos
 
+from modulos.funciones_utiles import mostrar_titulo
 
 
 #lista de productos, que tendra los productos en forma de diccionario
@@ -28,7 +29,9 @@ def listar_productos():
         print("no hay productos registrados")
         return
     
-    print("---Lista de productos---")
+    #función del titulo
+    mostrar_titulo("Lista de productos")
+    
     for producto in productos:
         print(
             f"ID: {producto['id']} | "
