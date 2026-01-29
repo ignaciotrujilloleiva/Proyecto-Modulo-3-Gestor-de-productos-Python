@@ -1,8 +1,7 @@
 
 #importaciones
 from modulos.datos_basicos import cargar_producto
-from modulos.gestion_datos import agregar_producto, listar_productos
-from modulos.gestion_datos import eliminar_producto
+from modulos.gestion_datos import agregar_producto, listar_productos, eliminar_producto
 from modulos.validaciones import validar_int
 
 # Menu interactivo
@@ -46,7 +45,7 @@ def mostrar_menu():
         elif opcion == "4":   
             id_eliminar = validar_int("Ingrese ID del producto a eliminar: ")
             eliminar_producto(id_eliminar)
-            
+
         elif opcion == "5":
             print("Saliendo del sistema ...")
             break
