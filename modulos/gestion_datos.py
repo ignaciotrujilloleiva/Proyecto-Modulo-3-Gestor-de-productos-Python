@@ -38,3 +38,14 @@ def listar_productos():
             f"Categoría: {producto['categoria']}" 
         )
 
+#función para aplicar metodo .remove() y eliminar productos con su ID
+def eliminar_producto(id_producto):
+    for producto in productos:
+        if producto['id'] == id_producto:
+            productos.remove(producto)
+            ids_registrados.remove(id_producto)
+            print("producto eliminado correctamente")
+            return True
+    
+    print("producto no encontrado")
+    return False
