@@ -8,14 +8,15 @@ from modulos.menu import mostrar_menu
 from modulos.datos_basicos import cargar_producto
 
 
-#Impresion de prueba 
-print ("Hola \nBienvenido")
 
 #Funcion principal
-def main():
-    print("Bienvenido al sistema de gestion de productos")
-    mostrar_menu()
+# def main():
+#     print("Bienvenido al sistema de gestion de productos")
+#     mostrar_menu()
 
+def main():
+    producto = cargar_producto(1)
+    print(producto)
 
 # Verificación de que el script se ejecuta directamente
 if __name__ == "__main__":

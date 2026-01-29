@@ -1,5 +1,7 @@
 # Lección 2: Tipos de datos y sentencias básicas
 
+#importaciónes desde validaciones
+from modulos.validaciones import (validar_int,validar_string,validar_float)
 #Diccionario con productos
 
 
@@ -10,9 +12,9 @@ categorias = ("cat1","cat2","cat3","cat4")
 #Declaración de variables para recibir y almacenar datos
 def cargar_producto(id_producto):
     #solicita al usuario el ingreso de datos del producto
-    nombre = input("Ingrese nombre del producto: ")
-    precio = float(input("Ingrese precio del producto: "))
-    stock = int(input("Ingrese stock del producto: "))
+    nombre = validar_string("Ingrese nombre del producto: ")
+    precio = validar_float("Ingrese precio del producto: ")
+    stock = validar_int("Ingrese stock del producto: ")
 
     print("Categorias disponibles: ")
     #imprime las categorias disponibles
@@ -21,7 +23,7 @@ def cargar_producto(id_producto):
 
     #Validación de elección de categoria
     while True:
-        opcion = int(input("Seleccione categoría (número): "))
+        opcion = validar_int("Seleccione categoría (número): ")
         if opcion >=1 and opcion <= len(categorias):
             categoria = categorias[opcion - 1]
             break
