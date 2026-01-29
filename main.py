@@ -5,6 +5,8 @@
 
 #importaciones
 from modulos.menu import mostrar_menu
+from modulos.datos_basicos import cargar_producto
+
 
 #Impresion de prueba 
 print ("Hola \nBienvenido")

@@ -16,8 +16,8 @@ def cargar_producto(id_producto):
 
     print("Categorias disponibles: ")
     #imprime las categorias disponibles
-    for item,categoria in enumerate(categorias, start=1):
-        print({f"{item}. {categoria}"})
+    for item, categoria in enumerate(categorias, start=1):
+        print(f"{item}. {categoria}")
 
     #Validación de elección de categoria
     while True:
@@ -29,8 +29,9 @@ def cargar_producto(id_producto):
             print("Categoría inválida")
     
 
+    #Diccionario del producto
     producto = {
-        "ID": id_producto,
+        "id": id_producto,
         "nombre": nombre,
         "precio": precio,
         "stock": stock,
@@ -39,4 +40,3 @@ def cargar_producto(id_producto):
     }
 
     return producto
-cargar_producto(1)
