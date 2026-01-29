@@ -49,3 +49,25 @@ def eliminar_producto(id_producto):
     
     print("producto no encontrado")
     return False
+
+#función de busqueda en la cual se aplicara .get(), .key() y .values()
+def buscar_producto(id_producto):
+    for producto in productos:
+        #el metodo .get() es una forma más segura y apropiada para solicitar datos al diccionario ya que de no encontrarlo arroja "none"
+        if producto.get('id') == id_producto:
+            print("---Producto encontrado---")
+
+            #Si el Id se encuentra, esta imprime la lista de los keys y values del producto en si
+            print("Claves del producto:", list(producto.keys()))
+            print("Valores del producto:", list(producto.values()))
+
+            print(
+                f"ID: {producto.get('id')} |"
+                f"Nombre: {producto.get('nombre')} |"
+                f"Precio: {producto.get('precio')} |"
+                f"Stock: {producto.get('stock')} |"
+                f"Categoría: {producto.get('categoria')}"
+            )
+            return producto
+    print("Producto no encontrado")
+    return None

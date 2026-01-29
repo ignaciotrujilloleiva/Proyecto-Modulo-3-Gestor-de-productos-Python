@@ -1,7 +1,7 @@
 
 #importaciones
 from modulos.datos_basicos import cargar_producto
-from modulos.gestion_datos import agregar_producto, listar_productos, eliminar_producto
+from modulos.gestion_datos import agregar_producto, listar_productos, eliminar_producto, buscar_producto
 from modulos.validaciones import validar_int
 
 # Menu interactivo
@@ -39,7 +39,8 @@ def mostrar_menu():
             listar_productos()
         
         elif opcion =="3":
-            print("Opción buscar producto ")
+            id_buscar = validar_int("Ingrese ID del producto a buscar: ")
+            buscar_producto(id_buscar)
 
         #Esta opción llama a la función eliminar_producto la cual mediante el id usa el metodo .remove()
         elif opcion == "4":   
