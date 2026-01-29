@@ -10,13 +10,10 @@ from modulos.datos_basicos import cargar_producto
 
 
 #Funcion principal
-# def main():
-#     print("Bienvenido al sistema de gestion de productos")
-#     mostrar_menu()
-
 def main():
-    producto = cargar_producto(1)
-    print(producto)
+    print("Bienvenido al sistema de gestion de productos")
+    mostrar_menu()
+
 
 # Verificación de que el script se ejecuta directamente
 if __name__ == "__main__":
