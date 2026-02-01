@@ -60,17 +60,14 @@ def buscar_producto(id_producto):
         if producto.get('id') == id_producto:
             print("---Producto encontrado---")
 
-            #Si el Id se encuentra, esta imprime la lista de los keys y values del producto en si
-            print("Claves del producto:", list(producto.keys()))
-            print("Valores del producto:", list(producto.values()))
+            #Si el Id se encuentra, los keys y values del producto se almacenan en variable
+            claves = list(producto.keys())
+            valores = list(producto.values())
 
-            print(
-                f"ID: {producto.get('id')} |"
-                f"Nombre: {producto.get('nombre')} |"
-                f"Precio: {producto.get('precio')} |"
-                f"Stock: {producto.get('stock')} |"
-                f"Categoría: {producto.get('categoria')}"
-            )
+            #Mediante ciclo for se recorren las claves y valores para imprimirlos, se usa capitaliza para entregarlo en formato de tabla
+            for clave, valor in producto.items():
+                print(f"{clave.capitalize():12}: {valor}")
+
             return producto
     print("Producto no encontrado")
     return None
