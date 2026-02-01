@@ -11,7 +11,7 @@ productos = []
 ids_registrados = set()
 
 
-#función para agregar producto a la lista
+#función 1° para agregar producto a la lista
 def agregar_producto(producto):
     #Se agrega verificación de ID´s
     if producto["id"] in ids_registrados:
@@ -23,7 +23,7 @@ def agregar_producto(producto):
     ids_registrados.add(producto["id"])
     return True
 
-#función para listar los productos con sus atributos
+#función 2° para listar los productos con sus atributos
 def listar_productos():
     if not productos:
         print("no hay productos registrados")
@@ -35,13 +35,13 @@ def listar_productos():
     for producto in productos:
         print(
             f"ID: {producto['id']} | "
-            f"Nombre: {producto['nombre']} |"
-            f"Precio: {producto['precio']} |"
-            f"Stock: {producto['stock']} |"
+            f"Nombre: {producto['nombre']} | "
+            f"Precio: {producto['precio']} | "
+            f"Stock: {producto['stock']} | "
             f"Categoría: {producto['categoria']}" 
         )
 
-#función para aplicar metodo .remove() y eliminar productos con su ID
+#función 4° para aplicar metodo .remove() y eliminar productos con su ID
 def eliminar_producto(id_producto):
     for producto in productos:
         if producto['id'] == id_producto:
@@ -53,7 +53,7 @@ def eliminar_producto(id_producto):
     print("producto no encontrado")
     return False
 
-#función de busqueda en la cual se aplicara .get(), .key() y .values()
+#función 3° de busqueda en la cual se aplicara .get(), .key() y .values()
 def buscar_producto(id_producto):
     for producto in productos:
         #el metodo .get() es una forma más segura y apropiada para solicitar datos al diccionario ya que de no encontrarlo arroja "none"

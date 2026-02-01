@@ -3,6 +3,7 @@
 from modulos.datos_basicos import cargar_producto
 from modulos.gestion_datos import agregar_producto, listar_productos, eliminar_producto, buscar_producto
 from modulos.validaciones import validar_int
+from modulos.funciones_utiles import mostrar_titulo
 
 # Menu interactivo
 
@@ -13,19 +14,21 @@ def mostrar_menu():
 
 
     while True: 
-        print("--- Menú Principal ---")
+        #función del titulo
+        mostrar_titulo("Menú Principal")
+
         print("1. Agregar producto")
         print("2. Listar productos")
-        print("3. buscar productos")
+        print("3. Buscar productos")
         print("4. Eliminar productos")
         print("5. Salir")
 
 
-        opcion = input("Seleccione una opción: ")
+        opcion = input("\nSeleccione una opción: ")
 
 
         if opcion not in ["1","2","3","4","5"]:
-            print("Opción inválida, intente nuevamente")
+            print("\nOpción inválida, intente nuevamente")
             continue
         #Esta opcion llama a la función cargar_productos que pide los datos al usuario, luego mediante agregar_producto lo agrega el dict a la list  
         elif opcion == "1":

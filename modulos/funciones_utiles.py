@@ -6,8 +6,8 @@
 def imprimir_linea():
     print("-" * 40)
 
-#Funcion que encasilla el titulo para imprimirlo
+#Función que encasilla el titulo para imprimirlo y centrarlo
 def mostrar_titulo(titulo):
     imprimir_linea()
-    print(titulo.upper())
+    print(titulo.upper().center(40))
     imprimir_linea()

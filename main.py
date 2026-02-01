@@ -5,13 +5,13 @@
 
 #importaciones
 from modulos.menu import mostrar_menu
-from modulos.datos_basicos import cargar_producto
+from modulos.funciones_utiles import mostrar_titulo
 
 
 
 #Funcion principal
 def main():
-    print("Bienvenido al sistema de gestion de productos")
+    mostrar_titulo("Bienvenido al sistema de gestion de productos")
     mostrar_menu()
 
 
