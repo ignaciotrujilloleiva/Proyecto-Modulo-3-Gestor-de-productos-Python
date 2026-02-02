@@ -84,7 +84,6 @@ Garantiza que no existan productos con el mismo identificador.
 * ➕ **Agregar producto**: Permite ingresar un nuevo producto validando sus datos.
 * 📋 **Listar productos**: Muestra todos los productos registrados.
 * 🔍 **Buscar producto por ID**: Recupera y muestra la información de un producto específico.
-* ✏️ **Actualizar producto**: Modifica los datos de un producto existente.
 * 🗑️ **Eliminar producto**: Elimina un producto del sistema por su ID.
 * 🚪 **Salir del sistema**: Finaliza la ejecución del programa.
 
@@ -121,17 +120,22 @@ Estas validaciones aseguran un uso correcto del sistema y evitan fallos durante 
 ```text
 Proyecto-Modulo-3-Gestor-de-productos-Python/
 │
-├── main.py                     # Archivo principal del sistema y punto de entrada del programa.
-├── README.md                   # Guía técnica y documentación del repositorio.
-├── modulos/                    # Directorio de los modulos del sistema.
-│   ├── __init__.py             # Inicializador para el sistema de importaciones.
-│   ├── menu.py                 # Encargada del menú principal del sistema y gestiona las opciones seleccionadas por el usuario.
-│   ├── gestion_datos.py        # Encargada de las gestiones de datos en las funciones Agregar, Listar, Eliminar y Buscar.
-│   ├── datos_basicos.py        # Encargada de solicitar al usuario y construir los datos básicos de un producto.
-│   ├── validaciones.py         # Contiene funciones reutilizables para validarla entrada de datos del usuario.
-│   ├── funciones_utiles.py     # Herramientas de formato y estética visual.
-├── entregables/                # Archivos de respaldo y reportes del proyecto.
-└── .gitignore                  # Archivos excluidos del control de versiones.
+├── main.py                       # Archivo principal del sistema y punto de entrada del programa.
+├── README.md                     # Guía técnica y documentación del repositorio.
+├── modulos/                      # Directorio de los módulos del sistema.
+│   ├── __init__.py               # Inicializador para el sistema de importaciones.
+│   ├── menu.py                   # Encargada del menú principal del sistema.
+│   ├── gestion_datos.py          # Encargada de las gestiones de datos en las funciones Agregar, Listar, Eliminar y Buscar.
+│   ├── datos_basicos.py          # Encargada de solicitar al usuario y construir los datos básicos de un producto.
+│   ├── validaciones.py           # Contiene funciones reutilizables para validar la entrada de datos del usuario.
+│   └── funciones_utiles.py       # Herramientas de formato y estética visual.
+├── entregables/                  # Archivos de respaldo y reportes del proyecto.
+│   ├── documentacion_tecnica.md
+│   ├── informe_validacion.md
+│   │    └── Incluye video demostrativo
+│   └── imagenes/                 # imagenes utilizadas en informe de validación
+│        └── imagenes.png del informe
+└── .gitignore                    # Archivos excluidos del control de versiones.
 ```
 
 La separación en módulos permite un código más limpio, organizado y escalable.
@@ -144,6 +148,7 @@ La separación en módulos permite un código más limpio, organizado y escalabl
 * Se priorizó la **legibilidad del código** sobre soluciones complejas.
 * La salida por consola fue diseñada para ser clara y comprensible para el usuario.
 * El sistema está preparado para futuras mejoras, como persistencia en archivos o bases de datos.
+* El sistema mantiene un contador independiente de los IDs eliminados, asegurando la unicidad y consistencia de los identificadores de productos.
 
 ---
 

@@ -1,6 +1,6 @@
 # 📄 Informe de Validación  
 
-## Proyecto Modulo 3: Sistema de Gestión de Productos en Python
+## Proyecto Modulo 3: Sistema de Gestión de Productos en Python 🐍
 
 ## 1. Introducción
 
@@ -199,6 +199,9 @@ Se agrega un nuevo producto ya habiendo eliminado un producto previamente.
 
 **Resultado obtenido:**  
 - El sistema crea el producto asignándole el ID 9, correspondiente al siguiente valor disponible.
+
+**Nota técnica:**
+- El sistema mantiene un contador independiente de los IDs eliminados, asegurando la unicidad de los identificadores y la consistencia del sistema, incluso cuando se eliminan productos y se agregan nuevos posteriormente.
 
 <img src="imagenes/agregar_producto_una_vez_ya_eliminados.png" alt="agregar producto nuevo id">
 

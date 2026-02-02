@@ -1,4 +1,4 @@
-# Gestor de Productos por Consola (Python)
+# Gestor de Productos por Consola (Python) 🐍
 
 ## 📌 Descripción del sistema
 
@@ -40,7 +40,7 @@ La arquitectura del proyecto se construyó de manera progresiva, utilizando la r
 
 ### 🔒 Tuplas
 
-* Se consideran para datos inmutables, en este caso se utilizó **categorias = ()** para las categorias de los productos
+* Se utiliza una tupla **categorias = ()** para definir las categorías disponibles del sistema.
 
 ---
 
@@ -70,6 +70,11 @@ Proyecto-Modulo-3-Gestor-de-productos-Python/
 │   ├── validaciones.py
 │   └── funciones_utiles.py
 ├── entregables/
+│   ├── documentacion_tecnica.md
+│   ├── informe_validacion.md
+│   │    └── Incluye video demostrativo
+│   └── imagenes/
+│        └── imagenes utilizadas en el informe
 └── .gitignore
 
 ```
@@ -80,7 +85,7 @@ Proyecto-Modulo-3-Gestor-de-productos-Python/
 
 python main.py
 
-El proyecto debe ejecutarse desde main.py, cuenta con una verificación que asegura que main() solo se ejecute si ese archivo es el punto de entrada
+El proyecto debe ejecutarse desde main.py, cuenta con una verificación que asegura que **main( )** solo se ejecute si ese archivo es el punto de entrada
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -92,7 +97,7 @@ El proyecto debe ejecutarse desde main.py, cuenta con una verificación que aseg
 
 ---
 
-##🧪 Validaciones y control de errores
+## 🧪 Validaciones y control de errores
 
 El sistema incorpora validaciones para asegurar la correcta ejecución del programa y evitar errores comunes:
 * Validación de entradas numéricas mediante funciones dedicadas.
@@ -102,12 +107,13 @@ Estas validaciones mejoran la experiencia del usuario y la estabilidad del siste
 
 ---
 
-##🧩 Decisiones de diseño
+## 🧩 Decisiones de diseño
 
 * Se utilizó una lista de diccionarios para facilitar el recorrido y manipulación de los productos.
 * Se empleó un set para garantizar la unicidad de los identificadores de productos.
 * La separación en módulos permite mantener el código ordenado, reutilizable y fácil de mantener.
 * Los métodos .get(), .keys() y .values() se utilizaron para acceder a la información de forma segura. .get() evita errores si una clave no existe, mientras que .keys() y .values() permiten procesar los datos de forma dinámica, facilitando que el sistema sea adaptable a cualquier rubro. 
+* La generación de IDs utiliza un contador independiente del estado de la lista, evitando reutilización de identificadores eliminados y garantizando consistencia.
 
 ## 📌 Observaciones
 
