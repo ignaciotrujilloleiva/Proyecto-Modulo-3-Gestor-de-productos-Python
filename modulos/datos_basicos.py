@@ -1,5 +1,7 @@
 # Lección 2: Tipos de datos y sentencias básicas
 
+#Módulo encargado de solicitar y construir los datos básicos de un producto a partir de la entrada del usuario.
+
 #importaciónes desde validaciones
 from modulos.validaciones import (validar_int,validar_string,validar_float)
 #Diccionario con productos

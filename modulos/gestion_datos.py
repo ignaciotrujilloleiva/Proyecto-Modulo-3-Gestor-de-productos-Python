@@ -1,6 +1,14 @@
 # Lección 4: Control de flujo y estructuras
 # Lección 5: Estructuras de datos
 
+#Módulo de gestión de datos del sistema.
+
+#Responsabilidad:
+#Administrar la lista de productos.
+#Aplicar operaciones CRUD (crear, leer, buscar y eliminar).
+#Garantizar la integridad de los datos utilizando sets para evitar duplicados.
+
+
 from modulos.funciones_utiles import mostrar_titulo
 
 
@@ -32,6 +40,7 @@ def listar_productos():
     #función del titulo
     mostrar_titulo("Lista de productos")
     
+    #Por cada producto en la lista productos, se imprime los valores y claves de cada uno
     for producto in productos:
         print(
             f"ID: {producto['id']} | "
@@ -44,6 +53,7 @@ def listar_productos():
 #función 4° para aplicar metodo .remove() y eliminar productos con su ID
 def eliminar_producto(id_producto):
     for producto in productos:
+        #Si el id entregado por el usuario es igual al id de algun producto de la lista, este se remueve
         if producto['id'] == id_producto:
             productos.remove(producto)
             ids_registrados.remove(id_producto)

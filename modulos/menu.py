@@ -1,3 +1,5 @@
+#Módulo encargado de la interacción con el usuario.
+#Contiene el menú principal del sistema y gestiona las opciones seleccionadas por el usuario.
 
 #importaciones
 from modulos.datos_basicos import cargar_producto
@@ -41,6 +43,7 @@ def mostrar_menu():
         elif opcion == "2":
             listar_productos()
         
+        #Esta opción llama a la funcion buscar_producto la cual mediante el id busca el producto y lo muestra
         elif opcion =="3":
             id_buscar = validar_int("Ingrese ID del producto a buscar: ")
             buscar_producto(id_buscar)
@@ -50,6 +53,7 @@ def mostrar_menu():
             id_eliminar = validar_int("Ingrese ID del producto a eliminar: ")
             eliminar_producto(id_eliminar)
 
+        #Esta opción llama el break permitiendo cerrar el bucle y salir del sistema
         elif opcion == "5":
             print("Saliendo del sistema ...")
             break

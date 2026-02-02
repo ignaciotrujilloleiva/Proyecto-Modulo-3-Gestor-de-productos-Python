@@ -1,5 +1,7 @@
 #Lección 3: Sentencias condicionales
 
+#Módulo de validaciones.
+#Contiene funciones reutilizables para validarla entrada de datos del usuario.
 
 #función para validación del string, valida que el texto del usuario no este vacío
 def validar_string(mensaje):
