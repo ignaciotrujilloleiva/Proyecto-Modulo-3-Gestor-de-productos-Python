@@ -8,7 +8,9 @@ from modulos.validaciones import (validar_int,validar_string,validar_float)
 
 
 #Tupla para las categorias
-categorias = ("cat1","cat2","cat3","cat4")
+#categorias = ("cat1","cat2","cat3","cat4")
+#Tupla con categorias para ejercicio
+categorias = ("Computación", "Perifericos", "Audio y Video", "Almacenamiento")
 
 
 #Declaración de variables para recibir y almacenar datos
