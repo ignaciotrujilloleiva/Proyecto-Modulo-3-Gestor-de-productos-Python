@@ -91,7 +91,8 @@ El proyecto debe ejecutarse desde main.py, cuenta con una verificación que aseg
 * Git y GitHub
 
 ---
-🧪 Validaciones y control de errores
+
+##🧪 Validaciones y control de errores
 
 El sistema incorpora validaciones para asegurar la correcta ejecución del programa y evitar errores comunes:
 * Validación de entradas numéricas mediante funciones dedicadas.
@@ -100,7 +101,8 @@ El sistema incorpora validaciones para asegurar la correcta ejecución del progr
 Estas validaciones mejoran la experiencia del usuario y la estabilidad del sistema.
 
 ---
-🧩 Decisiones de diseño
+
+##🧩 Decisiones de diseño
 
 * Se utilizó una lista de diccionarios para facilitar el recorrido y manipulación de los productos.
 * Se empleó un set para garantizar la unicidad de los identificadores de productos.
